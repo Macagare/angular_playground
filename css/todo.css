@@ -1,0 +1,16 @@
+ul.unstyled {
+    list-style-type: none;
+}
+
+.done-false {
+    color: #ff0000;
+}
+
+.done-true {
+    color: #0000ff;
+    text-decoration: line-through;
+}
+
+input.btn-primary {
+    color: #00ff00;
+}

@@ -1,0 +1,12 @@
+<h2>List Details</h2>
+<input type="text" ng-model="search" placeholder="Filter Details">
+<a href="" ng-click="empty()">clear</a>
+<div ng-controller="ListCtrl">
+    <ul>
+        <li ng-repeat="website in websites | filter:search">
+            <a href="{{website.site}}" target="_blank">{{website.title}}</a>
+            {{website.text}}
+            <a href="#/edit/{{website.id}}">edit</a>
+        </li>
+    </ul>
+</div>
